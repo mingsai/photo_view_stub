@@ -1,8 +1,11 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 
 class CommonExampleRouteWrapper extends StatelessWidget {
   const CommonExampleRouteWrapper({
+    Key? key,
     this.imageProvider,
     this.loadingBuilder,
     this.backgroundDecoration,

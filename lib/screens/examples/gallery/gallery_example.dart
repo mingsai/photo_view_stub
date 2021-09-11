@@ -6,6 +6,8 @@ import 'package:photo_view_stub/screens/common/app_bar.dart';
 import 'package:photo_view_stub/screens/examples/gallery/gallery_example_item.dart';
 
 class GalleryExample extends StatefulWidget {
+  const GalleryExample({Key? key}) : super(key: key);
+
   @override
   _GalleryExampleState createState() => _GalleryExampleState();
 }
@@ -84,6 +86,7 @@ class _GalleryExampleState extends State<GalleryExample> {
 
 class GalleryPhotoViewWrapper extends StatefulWidget {
   GalleryPhotoViewWrapper({
+    Key? key,
     this.loadingBuilder,
     this.backgroundDecoration,
     this.minScale,
@@ -91,7 +94,8 @@ class GalleryPhotoViewWrapper extends StatefulWidget {
     this.initialIndex = 0,
     required this.galleryItems,
     this.scrollDirection = Axis.horizontal,
-  }) : pageController = PageController(initialPage: initialIndex);
+  })  : pageController = PageController(initialPage: initialIndex),
+        super(key: key);
 
   final LoadingBuilder? loadingBuilder;
   final BoxDecoration? backgroundDecoration;
@@ -159,7 +163,7 @@ class _GalleryPhotoViewWrapperState extends State<GalleryPhotoViewWrapper> {
     final GalleryExampleItem item = widget.galleryItems[index];
     return item.isSvg
         ? PhotoViewGalleryPageOptions.customChild(
-            child: Container(
+            child: SizedBox(
               width: 300,
               height: 300,
               child: SvgPicture.asset(

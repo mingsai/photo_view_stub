@@ -5,6 +5,8 @@ import 'package:photo_view/photo_view.dart';
 import 'package:photo_view_stub/screens/common/app_bar.dart';
 
 class ControllerExample extends StatefulWidget {
+  const ControllerExample({Key? key}) : super(key: key);
+
   @override
   _ControllerExampleState createState() => _ControllerExampleState();
 }
@@ -39,7 +41,7 @@ class _ControllerExampleState extends State<ControllerExample> {
   }
 
   void onScaleState(PhotoViewScaleState scaleState) {
-    print(scaleState);
+    debugPrint(scaleState.toString());
   }
 
   @override

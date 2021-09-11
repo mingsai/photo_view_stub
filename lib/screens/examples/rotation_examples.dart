@@ -5,6 +5,8 @@ import 'package:photo_view/photo_view.dart';
 import 'package:photo_view_stub/screens/common/app_bar.dart';
 
 class GestureRotationExample extends StatelessWidget {
+  const GestureRotationExample({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return ExampleAppBarLayout(
@@ -16,7 +18,7 @@ class GestureRotationExample extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: const Text(
               "Example using option enableRotation, just pinch an rotate",
-              style: const TextStyle(fontSize: 18.0),
+              style: TextStyle(fontSize: 18.0),
             ),
           ),
           Expanded(
@@ -40,6 +42,8 @@ class GestureRotationExample extends StatelessWidget {
 }
 
 class ProgrammaticRotationExample extends StatefulWidget {
+  const ProgrammaticRotationExample({Key? key}) : super(key: key);
+
   @override
   _ProgrammaticRotationExampleState createState() =>
       _ProgrammaticRotationExampleState();
@@ -73,7 +77,7 @@ class _ProgrammaticRotationExampleState
                   padding: const EdgeInsets.all(20.0),
                   child: const Text(
                     "Example without manual rotation, click the button to rotate",
-                    style: const TextStyle(fontSize: 18.0),
+                    style: TextStyle(fontSize: 18.0),
                   ),
                 ),
                 Expanded(

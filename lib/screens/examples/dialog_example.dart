@@ -3,6 +3,8 @@ import 'package:photo_view/photo_view.dart';
 import 'package:photo_view_stub/screens/common/app_bar.dart';
 
 class DialogExample extends StatefulWidget {
+  const DialogExample({Key? key}) : super(key: key);
+
   @override
   _DialogExampleState createState() => _DialogExampleState();
 }
@@ -12,12 +14,10 @@ class _DialogExampleState extends State<DialogExample> {
         context: context,
         builder: (BuildContext context) {
           return Dialog(
-            child: Container(
-              child: PhotoView(
-                tightMode: true,
-                imageProvider: const AssetImage("assets/large-image.jpg"),
-                heroAttributes: const PhotoViewHeroAttributes(tag: "someTag"),
-              ),
+            child: PhotoView(
+              tightMode: true,
+              imageProvider: const AssetImage("assets/large-image.jpg"),
+              heroAttributes: const PhotoViewHeroAttributes(tag: "someTag"),
             ),
           );
         },
@@ -46,7 +46,7 @@ class _DialogExampleState extends State<DialogExample> {
         shape: const ContinuousRectangleBorder(),
         builder: (BuildContext context) {
           return SafeArea(
-            child: Container(
+            child: SizedBox(
               height: 250,
               child: PhotoViewGestureDetectorScope(
                 axis: Axis.vertical,
