@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
-import 'package:photo_view_example/screens/common/app_bar.dart';
+import 'package:photo_view_stub/screens/common/app_bar.dart';
 
 class InlineExample extends StatelessWidget {
   @override

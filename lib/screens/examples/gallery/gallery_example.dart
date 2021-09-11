@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
-import 'package:photo_view_example/screens/common/app_bar.dart';
-import 'package:photo_view_example/screens/examples/gallery/gallery_example_item.dart';
+import 'package:photo_view_stub/screens/common/app_bar.dart';
+import 'package:photo_view_stub/screens/examples/gallery/gallery_example_item.dart';
 
 class GalleryExample extends StatefulWidget {
   @override

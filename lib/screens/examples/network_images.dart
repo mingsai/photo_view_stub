@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:photo_view_example/screens/common/app_bar.dart';
-import 'package:photo_view_example/screens/common/common_example_wrapper.dart';
-import 'package:photo_view_example/screens/common/example_button.dart';
+import 'package:photo_view_stub/screens/common/app_bar.dart';
+import 'package:photo_view_stub/screens/common/common_example_wrapper.dart';
+import 'package:photo_view_stub/screens/common/example_button.dart';
 
 class NetworkExamples extends StatelessWidget {
   @override
