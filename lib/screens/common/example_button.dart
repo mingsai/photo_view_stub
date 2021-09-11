@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 class ExampleButtonNode extends StatelessWidget {
   const ExampleButtonNode({
+    Key? key,
     required this.title,
     required this.onPressed,
-  });
+  }) : super(key: key);
 
   final String title;
   final VoidCallback onPressed;
